@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+@import "variables";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    font-family: "League Spartan";
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0px;
+    padding: 25px;
+
+    .container {
+        width: 590px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        background-color: $key_violet_70;
+        margin: 0px auto;
+
+        header {
+            h1 {
+                font-size: 32px;
+                color: $text_yellow;
+            }
+        }
+        .result {
+            display: flex;
+            justify-content: flex-end;
+            border-color: $background_90;
+            background-color: $background_90;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 10px;
+            height: 128px;
+            align-items: center;
+            padding-right: 32px;
+
+            input {
+                font-size: 56px;
+                letter-spacing: -0.933px;
+                background: transparent;
+                border: none;
+                width: 100%;
+                text-align: right;
+                font-family: "League Spartan";
+                font-weight: 700;
+                color: $text_yellow;
+            }
+        }
+
+        .calc_buttons {
+            display: flex;
+            flex-direction: column;
+            padding: 32px;
+            border-color: $background_90;
+            background-color: $background_90;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 10px;
+            margin-top: 24px;
+
+            .line_button {
+                display: flex;
+                flex-direction: row;
+                gap: 25px;
+                margin-bottom: 24px;
+
+                .item_button {
+                    width: 101px;
+                    height: 64px;
+                    border-radius: 10px;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: $key_violet_80;
+                    background-color: $key_violet_80;
+                    box-shadow: 0px -4px 0px 0px #881c9e inset;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    color: $text_yellow;
+                }
+
+                .item_button:hover {
+                    border-radius: 10px;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: #6c34ac;
+                    background-color: #6c34ac;
+                }
+
+                .item_button_t2 {
+                    border-color: $key_violet_70;
+                    background-color: $key_violet_70;
+                    box-shadow: 0px -4px 0px 0px #be15f4 inset;
+                    color: $text_white;
+                    font-size: 28px;
+                }
+
+                .item_button_t2:hover {
+                    border-radius: 10px;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: #8631af;
+                    background-color: #8631af;
+                }
+
+                .item_button_t3 {
+                    width: 227px;
+                }
+
+                .item_button_t4 {
+                    width: 227px;
+                    border-color: $key_cyan_100;
+                    background-color: $key_cyan_100;
+                    box-shadow: 0px -4px 0px 0px #6cf9f1 inset;
+                    color: $text_dark_blue;
+                    font-size: 28px;
+                }
+
+                .item_button_t4:hover {
+                    border-radius: 10px;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: #93fff8;
+                    background-color: #93fff8;
+                }
+            }
+        }
+    }
+}
