@@ -7,6 +7,7 @@
   <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="./css/index.css" type="text/css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="../calculator/js/calculator.js"></script>
 
   <title>Frontend Mentor | Calculator app</title>
 
@@ -18,36 +19,36 @@
       <h1>calc</h1>
     </header>
     <div class="result">
-      <input type="text" id="input" name="input" value="399,981" readonly />
+      <input type="text" id="input" name="input" value="" readonly />
     </div>
     <div class="calc_buttons">
       <div class="line_button">
-        <a href="#" class="item_button">7</a>
-        <a href="#" class="item_button">8</a>
-        <a href="#" class="item_button">9</a>
-        <a href="#" class="item_button item_button_t2">DEL</a>
+        <a href="javascript:void(0)" class="item_button" onclick="setValue('7')">7</a>
+        <a href="javascript:void(0)" class="item_button" onclick="setValue('8')">8</a>
+        <a href="javascript:void(0)" class="item_button" onclick="setValue('9')">9</a>
+        <a href="javascript:void(0)" class="item_button item_button_t2" onclick="remove()">DEL</a>
       </div>
       <div class="line_button">
-        <a href="#" class="item_button">4</a>
-        <a href="#" class="item_button">5</a>
-        <a href="#" class="item_button">6</a>
-        <a href="#" class="item_button">+</a>
+        <a href="javascript:void(0)" class="item_button" onclick="setValue('4')">4</a>
+        <a href="javascript:void(0)" class="item_button" onclick="setValue('5')">5</a>
+        <a href="javascript:void(0)" class="item_button" onclick="setValue('6')">6</a>
+        <a href="javascript:void(0)" class="item_button" onclick="setSymbol('+')">+</a>
       </div>
       <div class="line_button">
-        <a href="#" class="item_button">1</a>
-        <a href="#" class="item_button">2</a>
-        <a href="#" class="item_button">3</a>
-        <a href="#" class="item_button">-</a>
+        <a href="javascript:void(0)" class="item_button" onclick="setValue('1')">1</a>
+        <a href="javascript:void(0)" class="item_button" onclick="setValue('2')">2</a>
+        <a href="javascript:void(0)" class="item_button" onclick="setValue('3')">3</a>
+        <a href="javascript:void(0)" class="item_button" onclick="setSymbol('-')">-</a>
       </div>
       <div class="line_button">
-        <a href="#" class="item_button">.</a>
-        <a href="#" class="item_button">0</a>
-        <a href="#" class="item_button">/</a>
-        <a href="#" class="item_button">x</a>
+        <a href="javascript:void(0)" class="item_button" onclick="setDecimal()">.</a>
+        <a href="javascript:void(0)" class="item_button" onclick="setValue('0')">0</a>
+        <a href="javascript:void(0)" class="item_button" onclick="setSymbol('/')">/</a>
+        <a href="javascript:void(0)" class="item_button" onclick="setSymbol('x')">x</a>
       </div>
       <div class="line_button">
-        <a href="#" class="item_button item_button_t2 item_button_t3">RESET</a>
-        <a href="#" class="item_button item_button_t4">=</a>
+        <a href="javascript:void(0)" class="item_button item_button_t2 item_button_t3" onclick="reset()">RESET</a>
+        <a href="javascript:void(0)" class="item_button item_button_t4" onclick="getResult()">=</a>
       </div>
     </div>
 
